@@ -7,4 +7,8 @@
 - register a taks in task scheduler(control panel->administration tools->task scheduler)
     - pick up the wpm.bat as the operation of the task
     - make sure the task will be executed by user "SYSTEM"
-    - define the trigger at login or system start.
+    - define the trigger as following:
+        - start at: event
+        - basic, log: Microsoft-Windows-WLAN-AutoConfig/Operational
+        - source: WLAN-AutoConfig
+        - event id: 11001
