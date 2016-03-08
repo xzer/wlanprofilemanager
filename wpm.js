@@ -28,6 +28,13 @@ var enableDHCP=function(intfName, ssid){
   exec(cmd, function(error,stdout,stderr){
     console.log(stdout);
   });
+  
+  cmd = 'netsh interface ip set dnsserver name="%s" source=dhcp'
+  cmd = util.format(cmd, intfName)
+  console.log(cmd);
+  exec(cmd, function(error, stdout, stderr){
+    console.log(stdout);
+  });
 }
 
 exec('netsh wlan show interfaces', function(error, stdout, stderr) {
