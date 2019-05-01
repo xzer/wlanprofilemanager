@@ -1,3 +1,11 @@
+# A better alternative
+
+There is a powershell version inspired by this project, which is easier to use.
+
+https://github.com/Indigo744/wlanprofilemanager-ps
+
+I would suggest using the above powershell version, thus this project is deprecated.
+
 # How to use
 
 - install nodejs
